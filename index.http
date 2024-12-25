@@ -1,0 +1,21 @@
+GET http://sandbox.com
+Host: sandbox.com
+User-Agent: Grigorovschii Dmitrii
+	
+POST http://sandbox.com/cars
+Host: sandbox.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Grigorovschii Dmitrii
+
+make=Toyota&model=Corolla&year=2020
+
+PUT /cars/1 HTTP/1.1
+Host: sandbox.com
+Content-Type: application/json
+User-Agent: Grigorovschii Dmitrii
+	
+	{
+	  "make": "Toyota",
+      "model": "Corolla",
+	  "year": 2021
+	}
